@@ -33,7 +33,7 @@ Para poder ejecutar el programa debemos seguir los siguientes pasos:
   LEFT JOIN PEDIDO p ON c.id = p.cliente_id;
   ```
   ```SQL
-  // Junta todos los detalles de pedido y facturas oara cada pedido
+  // Junta todos los detalles de pedido y la factura para cada pedido
   SELECT p.*, f.*, dp.*
   FROM PEDIDO p
   LEFT JOIN FACTURA f ON p.factura_id = f.id
